@@ -1,0 +1,114 @@
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+header {
+    background-color: rgb(10,34,44);
+    display: flex;
+    align-items: center;
+    height: 10vh;
+}
+
+#content_titel {
+    color: white;
+    display: flex;
+    justify-content: center;
+    font-size: 56px;
+    padding-top: 80px;
+    padding-bottom: 120px;
+}
+
+.headerLogo {
+    width: 30%;
+    padding: 8px;
+}
+main{
+    height: 80vh;
+}
+body {
+    max-height: 100dvh;
+    background-color: rgb(7,24,32);
+}
+
+.dialog_section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.vorschauImg {
+    width: 250px;
+    height: 250px;
+    border-radius: 8%;
+    padding: 8px;
+    cursor: pointer;
+}
+ 
+dialog {
+    background-color: rgb(13,50,64);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 800px;
+    width: 500px;
+    border-radius: 8%;
+}
+dialog header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 48px;
+    padding-right: 48px;
+    background-color: rgb(13,50,64);
+}
+dialog header h3 {
+    color: white;
+
+}
+dialog img {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 300px;
+    width: 400px;
+}
+dialog.opened {
+    background-color: rgb(13,50,64);
+}
+dialog::backdrop {
+    opacity: 0;
+    background-color: black;
+    transition: all 1s ease-in;
+
+    }
+dialog.opened::backdrop {
+    opacity: 0.75;
+    transition: all 1s ease-in;
+
+}
+.openDialogImg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+dialog footer {
+    background-color: rgb(13,50,64);
+}
+
+button {
+    height: 45px;
+    width: 78px;
+    cursor: pointer;
+}
+footer {
+    background-color: rgb(10,34,44);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+}
