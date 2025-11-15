@@ -69,6 +69,7 @@ dialog header h3 {
     color: white;
 
 }
+
 dialog img {
     position: fixed;
     top: 50%;
@@ -97,6 +98,10 @@ dialog.opened::backdrop {
     align-items: center;
 }
 dialog footer {
+    position: fixed;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     background-color: rgb(13,50,64);
 }
 

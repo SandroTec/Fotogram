@@ -25,8 +25,8 @@
                 </header>
                 <img class="openDialogImg" src="./img/bay-9939855_1280.jpg" alt="Bild der Lichter einer City bei Nacht">
                 <footer> 
-                    <button onclick="leftDialog(dialogRefArray[0])" id="btnLeft"><-</button> 
-                    <button onclick="rightDialog(dialogRefArray[1])" id="btnRight">-></button>
+                    <button onclick="openDialog(dialogRefArray[0],closeDialog(dialogRefArray[0]))" id="btnLeft"><-</button> 
+                    <button onclick="openDialog(dialogRefArray[1],closeDialog(dialogRefArray[0]))" id="btnRight">-></button>
                 </footer>            
             </dialog>
 
@@ -39,8 +39,8 @@
                 </header>
                 <img class="openDialogImg" src="./img/faroe-islands-9939486_1280.jpg" alt="Bild eines Segelfliegers">
                  <footer> 
-                    <button onclick="leftDialog(dialogRefArray[0])" id="btnLeft"><-</button> 
-                    <button onclick="rightDialog(dialogRefArray[2])" id="btnRight">-></button>
+                    <button onclick="openDialog(dialogRefArray[0],closeDialog(dialogRefArray[1]))" id="btnLeft"><-</button> 
+                    <button onclick="rightDialog()" id="btnRight">-></button>
                 </footer>        
             </dialog>
 
@@ -53,8 +53,8 @@
                 </header>
                 <img class="openDialogImg" src="./img/flying-9940425_1280.jpg" alt="Bild einer Kirche">
                 <footer> 
-                    <button onclick="leftDialog(dialogRefArray[1])" id="btnLeft"><-</button> 
-                    <button onclick="rightDialog(dialogRefArray[3])" id="btnRight">-></button>
+                    <button onclick="openDialog(dialogRefArray[1],closeDialog(dialogRefArray[2]))" id="btnLeft"><-</button> 
+                    <button onclick="rightDialog()" id="btnRight">-></button>
                 </footer>               
             </dialog>
 
@@ -67,8 +67,8 @@
                 </header>
                 <img class="openDialogImg" src="./img/rose-9939147_1280.jpg" alt="Rose">
                 <footer> 
-                    <button onclick="leftDialog(dialogRefArray[2])" id="btnLeft"><-</button> 
-                    <button onclick="rightDialog(dialogRefArray[4])" id="btnRight">-></button>
+                    <button onclick="openDialog(dialogRefArray[2],closeDialog(dialogRefArray[3]))" id="btnLeft"><-</button> 
+                    <button onclick="openDialog(dialogRefArray[4],closeDialog(dialogRefArray[3]))" id="btnRight">-></button>
                 </footer>   
             </dialog>
 

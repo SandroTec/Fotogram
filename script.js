@@ -15,19 +15,15 @@ function openDialog(dialogRefArray) {
 function closeDialog(dialogRefArray) {
     dialogRefArray.close();
     dialogRefArray.classList.remove('opened');
-}
-
-const currentIndex = 0;
-function leftDialog(dialogRefArray){
-    const prevIndex = (currentIndex - 1 + dialogRefArray.length) % dialogRefArray.length;
-    openDialog(dialogRefArray[prevIndex]);
-    closeDialog(dialogRefArray[currentIndex]);
     
 }
 
-function rightDialog(dialogRefArray) {
-   
-    const nextIndex = (currentIndex + 1) % dialogRefArray.length;
-    openDialog(dialogRefArray[nextIndex]);
-    closeDialog(dialogRefArray[currentIndex]);
+currentIndex = 0;
+let arrayLength = dialogRefArray.length;
+function rightDialog(dialogRefArray){
+    for (let i = 0; i <= arrayLength; i++) {
+        let nextDialog = currentIndex +1;
+        openDialog(nextDialog);
+    
+    }
 }
