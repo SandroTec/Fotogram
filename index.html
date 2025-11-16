@@ -12,75 +12,82 @@
     </header>
 
     <main>
-            <h1 id="content_titel">My Personal Fotoalbum</h1>
-
-
-
-        <section class="dialog_section">
-            <img onclick="openDialog(dialogRefArray[0])" src="./img/bay-9939855_1280.jpg" alt="Ufer" class="vorschauImg">
-            <dialog id="first_dialog">
-                <header>
-                    <h3>Ufer</h3> 
-                    <button aria-label="Dialog schließen" onclick="closeDialog(dialogRef)">X</button>
-                </header>
-                <img class="openDialogImg" src="./img/bay-9939855_1280.jpg" alt="Bild der Lichter einer City bei Nacht">
-                <footer> 
-                    <button onclick="openDialog(dialogRefArray[0],closeDialog(dialogRefArray[0]))" id="btnLeft"><-</button> 
-                    <button onclick="openDialog(dialogRefArray[1],closeDialog(dialogRefArray[0]))" id="btnRight">-></button>
-                </footer>            
-            </dialog>
-
-
-            <img onclick="openDialog(dialogRefArray[1])" src="./img/faroe-islands-9939486_1280.jpg" alt="Insel" class="vorschauImg">
-            <dialog id="second_dialog">
-                <header>
-                    <h3>Insel</h3> 
-                    <button aria-label="Dialog schließen" onclick="closeDialog(dialogRefTwo)">X</button>
-                </header>
-                <img class="openDialogImg" src="./img/faroe-islands-9939486_1280.jpg" alt="Bild eines Segelfliegers">
-                 <footer> 
-                    <button onclick="openDialog(dialogRefArray[0],closeDialog(dialogRefArray[1]))" id="btnLeft"><-</button> 
-                    <button onclick="rightDialog()" id="btnRight">-></button>
-                </footer>        
-            </dialog>
-
-
-            <img onclick="openDialog(dialogRefArray[2])" src="./img/flying-9940425_1280.jpg" alt="Vögel" class="vorschauImg">
-            <dialog id="third_dialog">
-                <header>
-                    <h3>Vögel</h3> 
-                    <button aria-label="Dialog schließen" onclick="closeDialog(dialogRefThree)">X</button>
-                </header>
-                <img class="openDialogImg" src="./img/flying-9940425_1280.jpg" alt="Bild einer Kirche">
-                <footer> 
-                    <button onclick="openDialog(dialogRefArray[1],closeDialog(dialogRefArray[2]))" id="btnLeft"><-</button> 
-                    <button onclick="rightDialog()" id="btnRight">-></button>
-                </footer>               
-            </dialog>
-
-
-            <img onclick="openDialog(dialogRefArray[3])" src="./img/rose-9939147_1280.jpg" alt="Rose" class="vorschauImg">
-            <dialog id="fourth_dialog">
-                <header>
-                    <h3>Rose</h3> 
-                    <button aria-label="Dialog schließen" onclick="closeDialog(dialogRefFourth)">X</button>
-                </header>
-                <img class="openDialogImg" src="./img/rose-9939147_1280.jpg" alt="Rose">
-                <footer> 
-                    <button onclick="openDialog(dialogRefArray[2],closeDialog(dialogRefArray[3]))" id="btnLeft"><-</button> 
-                    <button onclick="openDialog(dialogRefArray[4],closeDialog(dialogRefArray[3]))" id="btnRight">-></button>
-                </footer>   
-            </dialog>
-
-            
-
+        <section class="startseite">
+            <img class="vorschauImg" src="./img/bay-9939855_1280.jpg" alt="Ufer" onclick="openDialog('first_dialog')">
+            <img class="vorschauImg" src="./img/faroe-islands-9939486_1280.jpg" alt="Insel" onclick="openDialog('second_dialog')">
+            <img class="vorschauImg" src="./img/rose-9939147_1280.jpg" alt="Rose" onclick="openDialog('third_dialog')">
         </section>
+
+
+
+        <section class="dialoge">
+    
+            <dialog id="first_dialog">
+                <form method="dialog">
+                    <header>
+                        <button onclick="closeAllDialogs()">Schließen</button>
+                        <p id="imgText"></p>
+                    </header>
+
+                    <section>
+                        <img src="./img/bay-9939855_1280.jpg" alt="Ufer">
+                    </section>
+                    
+                    <footer>
+                        <button class="prevBtn" onclick="prevDialog()">←</button>
+                        <button class="nextBtn" onclick="nextDialog()">→</button>
+                    </footer>
+                </form>
+            </dialog>
+
+
+
+            <dialog id="second_dialog">
+                <form method="dialog">
+                    <header>
+                        <button onclick="closeAllDialogs()">Schließen</button>
+                    </header>
+
+                    <section>
+                        <p id="imgText"></p>
+                        <img src="./img/faroe-islands-9939486_1280.jpg" alt="Insel">
+                    </section>
+                
+                    <footer>
+                        <button class="prevBtn" onclick="prevDialog()">←</button>
+                        <button class="nextBtn" onclick="nextDialog()">→</button>
+                    </footer>
+                </form>
+            </dialog>
+
+
+
+            <dialog id="third_dialog">
+                <form method="dialog">
+
+                    <header>
+                        <button onclick="closeAllDialogs()">Schließen</button>
+                    </header>
+
+                    <section>
+                        <p id="imgText"></p>
+                        <img src="./img/rose-9939147_1280.jpg" alt="Rose">
+                    </section>
+                
+                    <footer>
+                        <button class="prevBtn" onclick="prevDialog()">←</button>
+                        <button class="nextBtn" onclick="nextDialog()">→</button>
+                    </footer>
+                </form>
+            </dialog>
+        </section>
+
     </main>
 
-    <footer>
-        <p>Test</p>
-    </footer>
 
+    <footer>
+
+    </footer>
 
 <script src="./script.js"></script>
 </body>

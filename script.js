@@ -1,29 +1,41 @@
-const dialogRef = document.getElementById('first_dialog');
-const dialogRefTwo = document.getElementById('second_dialog');
-const dialogRefThree = document.getElementById('third_dialog')
-const dialogRefFourth= document.getElementById('fourth_dialog');
 
-let dialogRefArray = [dialogRef, dialogRefTwo, dialogRefThree, dialogRefFourth];
 
-const btnLeft = document.getElementById('btnLeft');
-const btnRight = document.getElementById('btnRight');
-
-function openDialog(dialogRefArray) {
-    dialogRefArray.showModal();
-}
-
-function closeDialog(dialogRefArray) {
-    dialogRefArray.close();
-    dialogRefArray.classList.remove('opened');
-    
-}
-
+let dialogRefArray = ['first_dialog', 'second_dialog', 'third_dialog'];
 currentIndex = 0;
-let arrayLength = dialogRefArray.length;
-function rightDialog(dialogRefArray){
-    for (let i = 0; i <= arrayLength; i++) {
-        let nextDialog = currentIndex +1;
-        openDialog(nextDialog);
-    
+
+function closeAllDialogs() {
+    dialogRefArray.forEach(id => {
+        const dlg = document.getElementById(id);
+        if (dlg.open) dlg.close();
+    });
+}
+
+
+function openDialog(id) {
+    currentIndex = dialogRefArray.indexOf(id);
+    closeAllDialogs();
+    const dlg = document.getElementById(id);
+    dlg.showModal();
+}
+
+
+
+let arrayLength = dialogRefArray.length ;
+
+
+function nextDialog(){
+    if (currentIndex < arrayLength -1) {
+        currentIndex++;
+        openDialog(dialogRefArray[currentIndex]);
     }
 }
+
+
+function prevDialog() {
+    if (currentIndex > 0) {
+        currentIndex--;
+        openDialog(dialogRefArray[currentIndex]);
+    }
+}
+
+

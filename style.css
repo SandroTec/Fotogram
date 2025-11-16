@@ -26,6 +26,10 @@ header {
     padding: 8px;
 }
 main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
     height: 80vh;
 }
 body {
@@ -33,11 +37,7 @@ body {
     background-color: rgb(7,24,32);
 }
 
-.dialog_section {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
+
 
 .vorschauImg {
     width: 250px;
@@ -60,7 +60,6 @@ dialog {
 dialog header {
     display: flex;
     align-items: center;
-    justify-content: space-between;
     padding-left: 48px;
     padding-right: 48px;
     background-color: rgb(13,50,64);
