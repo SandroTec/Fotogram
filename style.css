@@ -46,7 +46,9 @@ body {
     padding: 8px;
     cursor: pointer;
 }
- 
+ .dialoge {
+    padding-bottom: 42px;
+ }
 dialog {
     background-color: rgb(13,50,64);
     position: fixed;
@@ -64,9 +66,10 @@ dialog header {
     padding-right: 48px;
     background-color: rgb(13,50,64);
 }
-dialog header h3 {
+dialog section h3 {
     color: white;
-
+    padding-left: 50px;
+    padding-top: 86px;
 }
 
 dialog img {
@@ -115,4 +118,28 @@ footer {
     justify-content: center;
     align-items: center;
     height: 10vh;
+}
+
+
+@media (max-width: 850px)  {
+    main {
+        height: fit-content;
+    }
+    section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+
+}
+
+@media (max-width: 650px) {
+    h1 {
+        text-align: center;
+    }
+
+    .dialoge{
+        margin-bottom: 42px;
+    }   
 }
