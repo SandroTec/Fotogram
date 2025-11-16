@@ -25,6 +25,12 @@ header {
     width: 30%;
     padding: 8px;
 }
+
+
+
+
+
+
 main{
     display: flex;
     flex-wrap: wrap;
@@ -46,6 +52,12 @@ body {
     padding: 8px;
     cursor: pointer;
 }
+
+
+
+
+
+
  .dialoge {
     padding-bottom: 42px;
  }
@@ -59,6 +71,8 @@ dialog {
     width: 500px;
     border-radius: 8%;
 }
+
+
 dialog header {
     display: flex;
     align-items: center;
@@ -99,6 +113,8 @@ dialog.opened::backdrop {
     justify-content: center;
     align-items: center;
 }
+
+
 dialog footer {
     position: fixed;
     top: 85%;
@@ -107,11 +123,16 @@ dialog footer {
     background-color: rgb(13,50,64);
 }
 
+
+
 button {
     height: 45px;
     width: 78px;
     cursor: pointer;
 }
+
+
+
 footer {
     background-color: rgb(10,34,44);
     display: flex;
@@ -119,6 +140,7 @@ footer {
     align-items: center;
     height: 10vh;
 }
+
 
 
 @media (max-width: 850px)  {
