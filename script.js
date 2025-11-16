@@ -3,6 +3,7 @@
 let dialogRefArray = ['first_dialog', 'second_dialog', 'third_dialog'];
 currentIndex = 0;
 
+
 function closeAllDialogs() {
     dialogRefArray.forEach(id => {
         const dlg = document.getElementById(id);
