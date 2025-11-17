@@ -52,6 +52,7 @@ body {
     height: 250px;
     border-radius: 8%;
     padding: 8px;
+    object-fit: cover;
     cursor: pointer;
 }
 

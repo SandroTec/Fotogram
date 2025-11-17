@@ -1,6 +1,6 @@
 
 
-let dialogRefArray = ['first_dialog', 'second_dialog', 'third_dialog'];
+let dialogRefArray = ['first_dialog', 'second_dialog', 'third_dialog','fourth_dialog', 'fifth_dialog','sixth_dialog'];
 currentIndex = 0;
 
 
@@ -37,7 +37,7 @@ function prevDialog() {
     if (currentIndex > 0) {
         currentIndex--;
         openDialog(dialogRefArray[currentIndex]);
-    }else openDialog(dialogRefArray[2])
+    }else openDialog(dialogRefArray[arrayLength-1])
 }
 
 

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fotogram</title>
     <link rel="stylesheet" href="./style.css">
+    <link rel="icon" type="icon" href="./img/favicon.svg">
 </head>
 <body id="body">
     <header>
@@ -17,9 +18,9 @@
             <img class="vorschauImg" src="./img/bay-9939855_1280.jpg" alt="Ufer" onclick="openDialog('first_dialog')">
             <img class="vorschauImg" src="./img/faroe-islands-9939486_1280.jpg" alt="Insel" onclick="openDialog('second_dialog')">
             <img class="vorschauImg" src="./img/rose-9939147_1280.jpg" alt="Rose" onclick="openDialog('third_dialog')">
-        
-        
-        
+            <img class="vorschauImg" src="./img/flying-9940425_1280.jpg" alt="Vögel" onclick="openDialog('fourth_dialog')">
+            <img class="vorschauImg" src="./img/africa-9904004_1280.jpg" alt="Globus" onclick="openDialog('fifth_dialog')">
+            <img class="vorschauImg" src="./img/poisonous-snake-9829897_1280.jpg" alt="Schlange" onclick="openDialog('sixth_dialog')">
         </section>
 
 
@@ -85,6 +86,64 @@
                 </form>
             </dialog>
 
+            <dialog id="fourth_dialog">
+                <form method="dialog">
+
+                    <header>
+                        <button class="escBtn" onclick="closeAllDialogs()">X</button>
+                    </header>
+
+                    <section>
+                        <h3>Vögel</h3>
+                        <img src="./img/flying-9940425_1280.jpg" alt="Vögel">
+                    </section>
+                
+                    <footer>
+                        <button class="prevBtn" onclick="prevDialog()">←</button>
+                        <button class="nextBtn" onclick="nextDialog()">→</button>
+                    </footer>
+                </form>
+            </dialog>
+
+
+            <dialog id="fifth_dialog">
+                <form method="dialog">
+
+                    <header>
+                        <button class="escBtn" onclick="closeAllDialogs()">X</button>
+                    </header>
+
+                    <section>
+                        <h3>Globus</h3>
+                        <img src="./img/africa-9904004_1280.jpg" alt="Globus">
+                    </section>
+                
+                    <footer>
+                        <button class="prevBtn" onclick="prevDialog()">←</button>
+                        <button class="nextBtn" onclick="nextDialog()">→</button>
+                    </footer>
+                </form>
+            </dialog>
+
+
+            <dialog id="sixth_dialog">
+                <form method="dialog">
+
+                    <header>
+                        <button class="escBtn" onclick="closeAllDialogs()">X</button>
+                    </header>
+
+                    <section>
+                        <h3>Schlange</h3>
+                        <img src="./img/poisonous-snake-9829897_1280.jpg" alt="Schlange">
+                    </section>
+                
+                    <footer>
+                        <button class="prevBtn" onclick="prevDialog()">←</button>
+                        <button class="nextBtn" onclick="nextDialog()">→</button>
+                    </footer>
+                </form>
+            </dialog>
             
         </section>
 
