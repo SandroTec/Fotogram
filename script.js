@@ -29,7 +29,7 @@ function nextDialog(){
     if (currentIndex < arrayLength -1) {
         currentIndex++;
         openDialog(dialogRefArray[currentIndex]);
-    }
+    }else openDialog(dialogRefArray[0])
 }
 
 
@@ -37,7 +37,7 @@ function prevDialog() {
     if (currentIndex > 0) {
         currentIndex--;
         openDialog(dialogRefArray[currentIndex]);
-    }
+    }else openDialog(dialogRefArray[2])
 }
 
 
