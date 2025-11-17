@@ -214,13 +214,7 @@ footer {
     overflow-y: hidden;
 }
 
-    dialog header {
-        padding-right: 24px;
-    }
-    dialog section h3 {
-    padding-left: 24px;
-}
-    
+
     dialog footer {
     top: 93%;
     }
@@ -244,11 +238,11 @@ footer {
 
 
     dialog header {
-        padding-right: 10px;
+        padding-right: 16px;
     }
 
     dialog section h3 {
-    padding-left: 10px;
+    padding-left: 16px;
 }
     
     dialog img {
