@@ -21,6 +21,7 @@ function openDialog(id) {
 
 
 
+
 let arrayLength = dialogRefArray.length ;
 
 

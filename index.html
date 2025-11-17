@@ -6,7 +6,7 @@
     <title>Fotogram</title>
     <link rel="stylesheet" href="./style.css">
 </head>
-<body>
+<body id="body">
     <header>
         <img src="./img/Fotogram_Logo.svg" alt="Fotogram Logo" class="headerLogo">
     </header>
@@ -24,12 +24,12 @@
 
 
 
-        <section class="dialoge">
+        <section id="dialogs" class="dialoge">
     
             <dialog id="first_dialog">
                 <form method="dialog">
                     <header>
-                        <button onclick="closeAllDialogs()">Schließen</button>
+                        <button class="escBtn" onclick="closeAllDialogs()">X</button>
                     </header>
 
                     <section>
@@ -49,7 +49,7 @@
             <dialog id="second_dialog">
                 <form method="dialog">
                     <header>
-                        <button onclick="closeAllDialogs()">Schließen</button>
+                        <button class="escBtn" onclick="closeAllDialogs()">X</button>
                     </header>
 
                     <section>
@@ -70,7 +70,7 @@
                 <form method="dialog">
 
                     <header>
-                        <button onclick="closeAllDialogs()">Schließen</button>
+                        <button class="escBtn" onclick="closeAllDialogs()">X</button>
                     </header>
 
                     <section>
