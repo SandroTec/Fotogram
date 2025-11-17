@@ -167,10 +167,10 @@ footer {
 
 
 @media (max-width: 850px)  {
-    main {
+    .startseite {
         height: fit-content;
     }
-    section {
+    .startseite {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -193,40 +193,67 @@ footer {
     height: 300px;
     width: 300px;
 }
-
+    dialog section h3 {
+    padding-left: 48px;
+    }
 }
 
 @media (max-width: 650px) {
-    h1 {
+    #content_titel {
         text-align: center;
     }
-
-    .dialoge{
-        margin-bottom: 42px;
-    }   
+    
+    
 }
 
 @media (max-width: 450px) {
     dialog {
-    background-color: rgb(13,50,64);
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    height: 500px;
+    height: 600px;
     width: 400px;
-    border-radius: 8%;
     overflow-x: hidden;
     overflow-y: hidden;
 }
+
+    dialog header {
+        padding-right: 24px;
+    }
+    dialog section h3 {
+    padding-left: 24px;
+}
+    
+    dialog footer {
+    top: 93%;
+    }
+}
+
+@media (max-width: 400px) {
+
+
+    dialog header {
+        padding-right: 22px;
+    }
+
+    dialog section h3 {
+    padding-left: 22px;
+}
+
+
+
+
+@media (max-width: 360px) {
+
+
+    dialog header {
+        padding-right: 10px;
+    }
+
+    dialog section h3 {
+    padding-left: 10px;
+}
+    
     dialog img {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    height: 300px;
-    width: 300px;
-    overflow-x: hidden;
-    overflow-y: hidden;
-}
+        height: 260px;
+        width: 260px;
+        padding: 10px;
+    }
 }
