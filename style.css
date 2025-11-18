@@ -8,6 +8,7 @@
 header {
     background-color: rgb(10,34,44);
     display: flex;
+    justify-content: center;
     align-items: center;
     height: 10vh;
 }
@@ -21,33 +22,40 @@ header {
     padding-bottom: 120px;
 }
 
+
+.headerContent {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+}
+
 .headerLogo {
     width: 30%;
     padding: 8px;
 }
 
-
-
-
-
-
 main{
     min-height: 80vh;
+    display: flex;
+    justify-content: center;
 }
 body {
     max-height: 100dvh;
     background-color: rgb(7,24,32);
-    
 }
 
-
-.startseite {
+.startseite{
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    max-width: 1440px;
+    margin: 0 auto;
 }
-.vorschauImg {
+
+.startseite div img {
     width: 250px;
     height: 250px;
     border-radius: 8%;
@@ -56,8 +64,15 @@ body {
     cursor: pointer;
 }
 
-.vorschauImg:hover {
+.startseite div img:hover {
     opacity: 0.5;
+}
+#imgContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding-top: 220px;
 }
 
  .dialoge {
