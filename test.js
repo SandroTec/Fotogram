@@ -41,3 +41,6 @@ function prevDialog() {
 }
 
 
+const currentIndex = 0;
+
+

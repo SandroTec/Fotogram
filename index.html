@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./style.css">
     <link rel="icon" type="icon" href="./img/favicon.svg">
 </head>
-<body id="body">
+<body id="body" onload="render()">
     <header>
         <div class="headerContent">
             <img src="./img/Fotogram_Logo.svg" alt="Fotogram Logo" class="headerLogo">
@@ -16,11 +16,9 @@
     </header>
 
     <main>
-
-        <div class="startseite">
+        <section class="startseite" id="startseite">
             
-                <div id="imgContainer"></div>
-        </div>
+            <div id="imgContainer"></div>
 
 
                 
@@ -28,27 +26,25 @@
 
 
 
+        </section>
 
 
-
-
-        <dialog id="dialog">
-                <form method="dialog">
+        <div class="overlay">
+            <dialog id="dialog">
                     <header>
                         <button class="escBtn">X</button>
                     </header>
+                    <section>
+                        <div id="dialogImgContainer">
 
-                    <div id="dialogImg">
-
-                    </div>
-                    
+                        </div>
+                    </section>
                     <footer>
-                        <button class="prevBtn" onclick="prevDialog()">←</button>
-                        <button class="nextBtn" onclick="nextDialog()">→</button>
+                        <button id="prevBtn">←</button>
+                        <button id="nextBtn">→</button>
                     </footer>
-                </form>
             </dialog>
-
+        </div>
     </main>
 
     <footer>
