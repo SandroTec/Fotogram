@@ -95,6 +95,8 @@ dialog {
     height: 800px;
     width: 600px;
     border-radius: 8%;
+    overflow-y: hidden;
+    overflow-x: hidden;
 }
 .escDiv {
     position: fixed;
@@ -126,8 +128,10 @@ dialog header {
     opacity: 0.75;
 }
 
-.dialogImgContainer {
+dialog section {
     width: 100%;
+    height: 100%;
+    
 }
 
 dialog img {
