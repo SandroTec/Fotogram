@@ -9,11 +9,13 @@ function render() {
         for (let i = 0; i < imgArray.length; i++) {
                 container.innerHTML += getImg(i);
         }
-    function getImg(i) {
+    }
+
+function getImg(i) {
         return  `<div class="startseite">
                     <img data-index="${i}" src="${imgArray[i]}" alt="${imgDescription[i]}">
                 </div>`
-    }}
+    }
 
 function getImgAndText(i) {
         return  `<div class="imgContainer">
